@@ -1,0 +1,209 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.Chair-setup{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.row-tex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeline ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.timeline ul li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeline ul li div:nth-child(1){
+    padding-right: 4rem;
+    padding-left: 4rem;
+    display: flex;
+    justify-content: center;
+    border-top: 2px dotted #000000;
+    transition: all 200ms ease-in;
+    color: #ffff;
+}
+.timeline ul li div:nth-child(2){
+    position:absolute;
+    content: "";
+    top: -14px;
+    left: 40%;
+    display: flex;
+    background-color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+}
+li{
+    list-style: none;
+    transition: 0.5s;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.content-cojineria{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(230 230 230);
+    padding: 10px;
+    gap: 20px;
+}
+.cogineria{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+.cogineria li:hover{
+    transform: scale(1.05);
+    background-color: #ffff;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.ButonCogines{
+    transform: scale(1.05);
+    background-color: #ffff;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cogineria picture{
+    cursor: pointer;
+}
+.cogineria img{
+    display: flex;
+    height: calc(90vh/11);
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Material{
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.colors {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 250px;
+    padding: 10px;  
+}
+.colors li{
+    position: relative;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.colors li:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.colors li:nth-child(1){
+    background-color: red;
+}
+.colors li:nth-child(2){
+    background-color: green;
+}
+.colors li:nth-child(3){
+    background-color: blue;
+}
+.colors li:nth-child(4){
+    background-color: yellow;
+}
+.colors li:nth-child(5){
+    background-color: orange;
+}
+.colors li:nth-child(6){
+    background-color: black;
+}
+.colors li:nth-child(7){
+    background-color: #505251;
+}
+.sillas{
+    display: flex;
+}
+.silla{
+    position: relative;
+    width: 600px;
+    max-width: 600px;
+    background-color: white;
+}
+.silla img{
+    position: absolute;
+    max-width: 600px;
+    max-height: 100%;
+
+}
+.title h1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 2.5rem;
+}
+.title h1 span:nth-child(2){
+    font-weight: 900;
+}
+.SelectColor::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    content: "✓";
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: #f5901d solid 1px;
+    background-color: aliceblue;
+}
+.textura{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 250px;
+    padding: 10px;  
+}
+.textura li:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.textura li{
+    position: relative;
+    display: flex;
+    width: 35px;
+    height: 35px;
+}
+.silla img:nth-child(1n+13){
+    opacity: 0;
+}

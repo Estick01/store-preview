@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@300&family=Roboto+Condensed&family=Vina+Sans&display=swap');
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+
+}

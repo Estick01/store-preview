@@ -1,0 +1,157 @@
+<main>
+    <div class="Chair-setup">
+        <div class="row-tex">
+            <div class="title">
+                <h1><span>CREAR</span><span>DISEÑO</span></h1>
+                <p>¡La tapicería de tu vehículo como la soñaste!</p>
+                <p>Sigue el paso a paso y crea cada pieza de tu próxima cojinería. </p>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div></div>
+                        <div>01</div>
+                    </li>
+                    <li><div></div>
+                        <div>02</div>
+                    </li>
+                    <li><div></div>
+                        <div>03</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-cojineria">
+                <ul #buton_cogineria class="cogineria">
+                    <li id="all" estado="false">
+                        <picture (click)="changeEstadoAll()">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/cojineria_completa.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="alas" estado="false">
+                        <picture (click)="changeEstadoById('alas')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/alas.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="asiento_1" estado="false">
+                        <picture (click)="changeEstadoById('asiento_1')"> 
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/asiento_1.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="asiento_2" estado="false">
+                        <picture (click)="changeEstadoById('asiento_2')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/asiento_2.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="asiento_3" estado="false">
+                        <picture (click)="changeEstadoById('asiento_3')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/asiento_3.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="espaldar_inferior" estado="false">
+                        <picture (click)="changeEstadoById('espaldar_inferior')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/espaldar_inferior.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="espaldar_superior"estado="false">
+                        <picture (click)="changeEstadoById('espaldar_superior')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/espaldar_superior.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="inserto_especial" estado="false">
+                        <picture (click)="changeEstadoById('inserto_especial')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/inserto_especial.png" alt="">
+                        </picture>
+                    </li>
+                    <li  id="laterales" estado="false">
+                        <picture (click)="changeEstadoById('laterales')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/laterales.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="reposacabezas_1" estado="false">
+                        <picture (click)="changeEstadoById('reposacabezas_1')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/reposacabezas_1.png" alt="">
+                        </picture>
+                    </li>
+                    <li id="reposacabezas_2" estado="false">
+                        <picture (click)="changeEstadoById('reposacabezas_2')">
+                            <img src="https://panel-cuero.s3.amazonaws.com/sillas/CUERO/reposacabezas_2.png" alt="">
+                        </picture>
+                    </li>
+                </ul>
+                <div class="menu" >
+                    <div #MaterialColor class="Material">
+                        <label for="">Seleciona el color del materal</label>
+                        <ul id="colors" class="colors">
+                            <li id="Mrojo" estado=""(click)="rojo('Mrojo')"></li>
+                            <li id="Mverde" estado=""(click)="verde('Mverde')"></li>
+                            <li id="Mazul" estado=""(click)="azul('Mazul')"></li>
+                            <li id="Mamarillo" estado=""(click)="amarillo('Mamarillo')"></li>
+                            <li id="Mtomate" estado=""(click)="tomate('Mtomate')"></li>
+                            <li id="Mnegro" estado=""(click)="negro('Mnegro')"></li>
+                            <li id="Mgris" estado=""(click)="gris('Mgris')"></li>
+                        </ul>
+                    </div>
+                    <div #TexturaColor class="Material">
+                        <label for="">Selecciona la textura</label>
+                        <ul class="textura">
+                            <li id="Cuadros" estado="false"(click)="textura('cuadros')"><img src="https://panel-cuero.s3.amazonaws.com/texturas/cuadros.png" alt=""></li>
+                            <li id="Microperforado"estado="false"(click)="textura('microperforado')"><img src="https://panel-cuero.s3.amazonaws.com/texturas/microperforado.png" alt=""></li>
+                            <li id="Panal" estado="false"(click)="textura('panal')"><img src="https://panel-cuero.s3.amazonaws.com/texturas/panal.png" alt=""></li>
+                            <li id="RombosGrandes" estado="false"(click)="textura('rombos_grandes')"><img src="https://panel-cuero.s3.amazonaws.com/texturas/rombos_grandes.png" alt=""></li>
+                            <li id="RombosPequeños" estado="false"(click)="textura('rombos_pequeños')"><img src="https://panel-cuero.s3.amazonaws.com/texturas/rombos_pequeños.png" alt=""></li>
+                        </ul>
+                        <label for="">Selecciona un Color de la textura</label>
+                        <ul id="textura" class="colors" >
+                            <li id="Trojo" estado="false"(click)="texturaRoja('Trojo')"></li>
+                            <li id="Tverde" estado="false"(click)="texturaVerde('Tverde')"></li>
+                            <li id="Tazul" estado="false"(click)="texturaAzul('Tazul')"></li>
+                            <li id="Tamarillo" estado="false"(click)="texturaAmarillo('Tamarillo')"></li>
+                            <li id="Ttomate" estado="false"(click)="texturaTomate('Ttomate')"></li>
+                            <li id="Tnegro" estado="false"(click)="texturaNegro('Tnegro')"></li>
+                        </ul>
+                    </div>
+                    <div #CosturaColor class="Material">
+                        <label for="">Selecciona el color de la costura</label>
+                        <ul id="hilo" class="colors" >
+                            <li id="rojo" estado="false"(click)="costuraRoja('rojo')"></li>
+                            <li id="verde" estado="false"(click)="costuraVerde('verde')"></li>
+                            <li id="azul" estado="false"(click)="costuraAzul('azul')"></li>
+                            <li id="amarillo" estado="false"(click)="costuraAmarillo('amarillo')"></li>
+                            <li id="tomate" estado="false"(click)="costuraTomate('tomate')"></li>
+                            <li id="negro" estado="false"(click)="costuraNegro('negro')"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <div class="sillas">
+                <picture #sillaImages class="silla">
+                    <img estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/accesorios/accesorios.png" alt="">
+                    <img id="alas" estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/alas/colores/rojo_cereza.png" alt="">
+                    <img id="asiento_1"estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/asiento_1/colores/rojo_cereza.png" alt="">
+                    <img id="inserto_especial"estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/inserto_especial/colores/rojo_cereza.png" alt="">
+                    <img id="laterales"estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/laterales/colores/rojo_cereza.png" alt="">
+                    <img id="reposacabezas_1"estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/reposacabezas_1/colores/rojo_cereza.png" alt="">
+                    <img id="reposacabezas_2"estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/reposacabezas_2/colores/rojo_cereza.png" alt="">
+                    <img id="espaldar_inferior" estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/espaldar_inferior/colores/rojo_cereza.png" alt="">
+                    <img id="asiento_3" estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/asiento_3/colores/rojo_cereza.png" alt="">
+                    <img id="espaldar_superior" estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/espaldar_superior/colores/rojo_cereza.png" alt="">
+                    <img id="asiento_2" estado="true"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/asiento_2/colores/rojo_cereza.png" alt="">
+                    <img #hilos estado="false" class="costura"src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/hilos/colores/gris_plata.png" alt="">
+                    <img id="reposacabezas_2" class="cuadros"estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/reposacabezas_2/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="reposacabezas_1" class="cuadros"estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/reposacabezas_1/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="laterales" class="cuadros"estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/laterales/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="inserto_especial" class="cuadros" estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/inserto_especial/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="espaldar_superior" class="cuadros" estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/espaldar_superior/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="espaldar_inferior" class="cuadros" estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/espaldar_inferior/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="asiento_3" class="cuadros"estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/asiento_3/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="asiento_2" class="cuadros"estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/asiento_2/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="asiento_1" class="cuadros"estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/asiento_1/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                    <img id="alas" class="cuadros"estado="false" src="https://panel-cuero.s3.amazonaws.com/autos/FORD/Ecosport Titanium/2018-2021/CUERO/alas/texturas/{{TipoTextura}}/{{TipoTextura1}}.png" alt="">
+                </picture>
+            </div>
+        </div> 
+    </div>
+</main>

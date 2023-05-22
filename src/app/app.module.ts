@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChairSetupComponent } from './Componets/chair-setup/chair-setup.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChairSetupComponent
   ],
   imports: [
     BrowserModule,
